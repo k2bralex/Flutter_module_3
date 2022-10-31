@@ -1,0 +1,44 @@
+name: flutter_basics
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Import flutter_svg: ^1.1.6
+  flutter_svg: ^1.1.6
+  # Import carousel_slider
+  carousel_slider: ^4.1.1
+
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  # Подключите любым способом ( git / pub.dev ) пакет для автоматической
+  # сортировки импортов https://pub.dev/packages/import_sorter.
+  import_sorter: ^4.6.0
+
+flutter:
+
+  uses-material-design: true
+  # Add image and fonts folder to project
+  assets:
+    - assets/
+    - assets/fonts/
+    - assets/images/
+
+  # Add NewYork font
+  fonts:
+    - family: NewYork
+      fonts:
+        - asset: assets/fonts/NewYork.ttf
